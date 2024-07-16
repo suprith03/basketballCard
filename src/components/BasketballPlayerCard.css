@@ -1,0 +1,108 @@
+.player-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  margin: 16px auto;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-image {
+  width: 100%;
+  height: auto;
+}
+
+.player-name {
+  font-size: 1.5em;
+  margin: 16px 0 8px;
+}
+
+.player-position {
+  font-size: 1.2em;
+  color: #555;
+  margin: 8px 0;
+}
+
+.player-stats {
+  font-size: 1em;
+  color: #333;
+  margin: 16px 0;
+}
+
+.player-stats p {
+  margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+  .player-card {
+    max-width: 100%;
+  }
+
+  .player-name {
+    font-size: 1.2em;
+  }
+
+  .player-position {
+    font-size: 1em;
+  }
+
+  .player-stats {
+    font-size: 0.9em;
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
